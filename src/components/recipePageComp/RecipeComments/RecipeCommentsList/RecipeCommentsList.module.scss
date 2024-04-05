@@ -1,0 +1,35 @@
+@import "../../../../styles/MainStyles.scss";
+
+.img {
+    border-radius: 133px;
+    width: 32px;
+    height: 32px;
+  }
+  
+  .imgAndNameWrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    div {
+      p:first-child {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 137%;
+        color: $grey_dark;
+      }
+      p:nth-child(2) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        color: $grey-semi-light;
+      }
+    }
+  }
+  
+  .comment {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $grey_dark;
+    margin-bottom: 4px;
+  }

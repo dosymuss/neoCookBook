@@ -1,0 +1,25 @@
+@import "../../../../styles/MainStyles.scss";
+.main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    color: $grey_dark;
+}
+.desc{
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: $grey-semi-light;
+width: 264px;
+}
+

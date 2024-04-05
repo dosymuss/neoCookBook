@@ -1,0 +1,17 @@
+@import "../../../styles/MainStyles.scss";
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $grey_dark;
+  cursor: pointer;
+}
+
+.textB {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 114%;
+  color: $grey_dark;
+  cursor: pointer;
+}

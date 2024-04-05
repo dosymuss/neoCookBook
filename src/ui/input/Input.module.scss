@@ -1,0 +1,77 @@
+@import "../../styles/MainStyles.scss";
+
+.inp {
+  border-radius: 12px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background-color: $grey_almost_light;
+  padding-left: 10px;
+  outline: none;
+  border: none; // написать стили и посмотреть их чате
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.inp:focus {
+  outline: 2px solid $color_o_main;
+}
+.errorMess {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $red-main;
+  text-align: left;
+}
+
+.inpDivPass {
+  border-radius: 12px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background-color: $grey_almost_light;
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:focus-within {
+    border: 2px solid $color_o_main;
+    //! этот фокус будет работать, тогда,
+    //!  когда какой то элемен из них будет фокус
+  }
+  input {
+    outline: none;
+    border: none; // написать стили и посмотреть их чате
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    background-color: transparent;
+    width: 20rem;
+  }
+  button {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.inpComm {
+  border-radius: 12px;
+  padding: 8px 16px;
+  width: 454px;
+  height: 40px;
+  background-color: $grey_almost_light;
+  padding-left: 10px;
+  outline: none;
+  border: none; // написать стили и посмотреть их чате
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.inpComm:focus {
+  outline: 2px solid $color_o_main;
+}

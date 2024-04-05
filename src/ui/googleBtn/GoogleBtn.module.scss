@@ -1,0 +1,20 @@
+@import "../../styles/MainStyles.scss";
+
+.button {
+  border: 1px solid $grey-stroke;
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 6px 12px;
+  width: 360px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $grey_dark;
+  }
+}

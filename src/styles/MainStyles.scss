@@ -1,0 +1,34 @@
+$color_o_main: #ff852c;
+$oran_dark:#F47F2B;
+$oran_darker:#D96A19;
+$oran_light:#BFBEBE;
+$grey_almost_light: #f1f1f1;
+$grey_dark: #4b4242;
+$grey_semi_light: #7c7575;
+$white: #fff;
+$yellow: #ffca42;
+$orange-light: #bfbebe;
+$grey-almost-white: #f1f1f1;
+$grey-stroke: #eaeaea;
+$grey-extra-light: #fbf9f7;
+$grey-semi-light: #7c7575;
+$green-main: #6bd05b;
+$green-semi-dark: #59ac4a;
+$red-main: #e44c4c;
+
+@mixin btnNull() {
+  border: none;
+  outline: none;
+}
+
+@mixin nullStyle(){
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+@mixin recipePageDiv(){
+  width: 600px;
+}
+

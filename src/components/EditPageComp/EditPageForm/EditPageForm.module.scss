@@ -1,0 +1,129 @@
+@import "../../../styles/MainStyles.scss";
+
+.main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 600px;
+  gap: 32px;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  text-align: center;
+  color: $grey_dark;
+  display: block;
+}
+
+.nameDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  gap: 5px;
+}
+
+.nameInp {
+  background-color: transparent;
+  @include nullStyle();
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.textStyle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: $grey_dark;
+}
+
+.timeText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $grey_dark;
+}
+
+.timeInp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  input {
+    border-radius: 12px;
+    padding: 8px 16px;
+    width: 64px;
+    height: 40px;
+    background-color: $grey_almost_light !important;
+    @include nullStyle();
+  }
+  input:focus {
+    outline: 2px solid $color_o_main;
+  }
+}
+
+.timeDiv {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+.videoInp {
+  border-radius: 12px;
+  padding: 8px 16px;
+  height: 40px;
+  background-color: $grey_almost_light;
+  padding-left: 10px;
+  outline: none;
+  border: none; // написать стили и посмотреть их чате
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  width: 100%;
+}
+
+.videoInp:focus {
+  outline: 2px solid #ff852c;
+}
+.videoDiv {
+  div {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+}
+
+.dragDiv {
+  div {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 184px;
+  div {
+    width: 320px;
+  }
+}

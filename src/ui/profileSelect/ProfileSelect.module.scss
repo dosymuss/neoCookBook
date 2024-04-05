@@ -1,0 +1,118 @@
+@import "../../styles/MainStyles.scss";
+.main {
+  @include nullStyle();
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  gap: 1px !important;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: right;
+}
+.profWrap {
+  position: relative;
+}
+.profModal {
+  border: 1px solid var(--grey-almost-white);
+  border-radius: 12px;
+  width: 240px;
+  height: 152px;
+  box-shadow: 0 5px 12px 0 rgba(40, 38, 34, 0.08);
+  background: $white;
+  position: absolute;
+  top: 38px;
+  right: 0;
+  opacity: 1;
+  transition: 0.5s;
+}
+.profModalHiden {
+  border: 1px solid var(--grey-almost-white);
+  border-radius: 12px;
+  width: 240px;
+  height: 152px;
+  box-shadow: 0 5px 12px 0 rgba(40, 38, 34, 0.08);
+  background: $white;
+  position: absolute;
+  top: 38px;
+  right: 0;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.profModalContent {
+  box-sizing: border-box;
+  padding: 16px 12px;
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: center;
+  gap: 16px !important;
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px !important;
+    img {
+      border-radius: 133px;
+      width: 32px;
+      height: 32px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 156%;
+      color: $grey_dark;
+    }
+  }
+  button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $grey-semi-light;
+    @include nullStyle();
+  }
+}
+
+.exitBtn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: $red-main !important;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  color: $grey_dark(--grey-dark);
+}
+
+
+.inpDiv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.forgotBtn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $grey_dark;
+  @include nullStyle();
+  cursor: pointer;
+}
+.newPassModalWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 16px;
+  button {
+    @include nullStyle();
+  }
+}

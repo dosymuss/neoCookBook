@@ -1,0 +1,25 @@
+@import "../../../styles/MainStyles.scss";
+
+.btnDiv {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 24px;
+  button {
+    @include nullStyle();
+    padding: 4px 0px;
+    height: 38px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 125%;
+    text-wrap: nowrap;
+  }
+}
+
+.btnAcc {
+  color: $grey_dark;
+  border-bottom: 2px solid black !important;
+}
+.btn {
+  color: $grey_dark;
+  opacity: 0.4;
+}

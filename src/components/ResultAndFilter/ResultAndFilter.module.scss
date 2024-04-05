@@ -1,0 +1,54 @@
+@import "../../styles/MainStyles.scss";
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  color: $grey_dark;
+}
+.desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $grey_semi_light;
+}
+.buttonText{
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: $grey_dark;
+}
+
+.btnAct{
+font-weight: 600;
+font-size: 14px;
+line-height: 114%;
+color: $grey_dark;
+@include nullStyle();
+cursor:pointer;
+}
+.btn{
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: $grey_semi_light;
+@include nullStyle();
+cursor:pointer;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 28px;
+    div:first-child{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    div:nth-child(2){
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}

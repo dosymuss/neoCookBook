@@ -1,0 +1,53 @@
+@import "../../../styles/MainStyles.scss";
+.main {
+  position: relative;
+  display: inline-block;
+}
+
+.btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $grey_dark;
+  @include nullStyle();
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 32px;
+}
+
+.select {
+  display: none;
+  position: absolute;
+  right: 200px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 1px solid $grey_almost_light;
+  border-radius: 12px;
+  padding: 4px 0px;
+  width: 240px;
+  box-shadow: 0 5px 12px 0 rgba(40, 38, 34, 0.08);
+  background: $white;
+  
+}
+
+.textContent {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $grey_dark;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.textContentBold {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 114%;
+  color: $grey_dark;
+  cursor: pointer;
+  padding: 8px 16px;
+
+}
+

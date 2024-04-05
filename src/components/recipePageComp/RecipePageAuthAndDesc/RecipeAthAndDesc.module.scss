@@ -1,0 +1,84 @@
+@import "../../../styles/MainStyles.scss";
+
+.main {
+  @include recipePageDiv();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.category {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: $color_o_main;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  color: $grey_dark;
+}
+.userDiv {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.img {
+  border-radius: 117px;
+  width: 32px;
+  height: 32px;
+}
+
+.userName {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $grey_dark;
+  cursor: pointer;
+  @include nullStyle();
+}
+.descDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 600px;
+}
+.descItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.descText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: $grey_dark;
+}
+
+.btnDiv {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  button {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    @include nullStyle();
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+  }
+  button:first-child {
+    color: $grey_dark;
+  }
+  button:last-child {
+    color: $red-main;
+  }
+}

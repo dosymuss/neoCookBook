@@ -1,0 +1,37 @@
+@import "../../../styles/MainStyles.scss";
+
+.main{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.image {
+  border-radius: 267px;
+  width: 64px;
+  height: 64px;
+}
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  color: $grey_dark;
+}
+.descDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.updateBtn {
+  @include nullStyle();
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color_o_main;
+  }
+
+}

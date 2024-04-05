@@ -1,0 +1,17 @@
+@import "../confirmEmail/ConfirmEmail.module.scss";
+
+.passDesc {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 143%;
+  color: $grey-semi-light;
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+}
+
+.newPassMain {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

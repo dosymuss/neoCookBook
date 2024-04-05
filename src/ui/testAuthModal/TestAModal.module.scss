@@ -1,0 +1,40 @@
+@import "../../styles/MainStyles.scss";
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+.moveLeft {
+  transform: translateX(-50%);
+  background-color: green;
+}
+
+.moveRight {
+  transform: translateX(50%);
+  background-color: bisque;
+}
+
+.buttonContainer {
+  margin-left: 20px;
+}
+
+.inpStyle {
+  border-radius: 16px;
+  padding: 12px 16px;
+  width: 55px;
+  height: 60px;
+  background-color: $grey-almost-white;
+}
+

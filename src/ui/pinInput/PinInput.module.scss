@@ -1,0 +1,15 @@
+@import "../../styles/MainStyles.scss";
+
+.main{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.errText{
+font-weight: 500;
+font-size: 16px;
+line-height: 125%;
+text-align: center;
+color: $red-main;
+margin-top: 8px;
+}

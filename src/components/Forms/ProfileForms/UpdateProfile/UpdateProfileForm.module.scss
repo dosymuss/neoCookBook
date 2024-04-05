@@ -1,0 +1,64 @@
+@import "../../../../styles/MainStyles.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 400px;
+  margin-top: 32px;
+}
+
+.inpDesc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: $grey_dark;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.imageDiv {
+  cursor: pointer;
+  input {
+    display: none;
+  }
+  div {
+    position: relative;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img:first-child {
+      border-radius: 333px;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+  }
+}
+
+.plusImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.passDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    @include nullStyle();
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      color: $color_o_main;
+    }
+  }
+}
+
+

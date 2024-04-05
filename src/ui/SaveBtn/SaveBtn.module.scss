@@ -1,0 +1,20 @@
+@import "../../styles/MainStyles.scss";
+
+.saveBtn {
+    @include nullStyle();
+    border: 1px solid $grey_dark;
+    border-radius: 8px;
+    padding: 6px 10px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 114%;
+      text-align: center;
+      color: $grey_dark;
+      cursor: pointer;
+    }
+  }

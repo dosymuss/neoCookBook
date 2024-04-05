@@ -1,0 +1,17 @@
+@import "../../../styles/MainStyles.scss";
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: $grey_dark;
+  margin-bottom: 16px;
+}
+.listText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $grey_dark;
+}
+.list {
+  padding-left: 16px;
+}

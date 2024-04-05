@@ -1,0 +1,27 @@
+@import "../../styles/MainStyles.scss";
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 12px;
+  padding: 8px 24px;
+  background-color: $color_o_main;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  cursor: pointer;
+  @include btnNull();
+}
+.btn:hover {
+  background-color: $oran_dark;
+}
+.btn:active {
+  background-color: $oran_darker;
+}
+.btn:disabled {
+  background-color: $oran_light;
+}

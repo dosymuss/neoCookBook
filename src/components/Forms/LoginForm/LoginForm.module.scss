@@ -1,0 +1,45 @@
+@import "../../../styles/MainStyles.scss";
+
+.title{
+font-weight: 600;
+font-size: 24px;
+line-height: 125%;
+color: $grey_dark(--grey-dark);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.inpDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.forgotBtn{
+font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: $grey_dark;
+@include nullStyle();
+cursor: pointer;
+}
+.newPassModalWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 16px;
+    button{
+        @include nullStyle();
+    }
+}

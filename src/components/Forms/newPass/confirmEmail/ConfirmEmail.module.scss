@@ -1,0 +1,18 @@
+@import "../EmailForm/EmailForm.module.scss";
+
+.sendCodeBtn {
+  @include nullStyle();
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: right;
+  color: black;
+}
+
+.sendCodeDesc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: right;
+  color: $grey-semi-light;
+}

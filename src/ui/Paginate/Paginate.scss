@@ -1,0 +1,50 @@
+@import "../../styles/MainStyles.scss";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+.page-item {
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+li {
+  list-style-type: none;
+}
+
+.page-link {
+  color: $grey_dark;
+  text-decoration: none;
+  padding: 7px 12px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+}
+
+.active .page-link {
+  background-color: transparent;
+  color: $color_o_main;
+  border: 2px solid $color_o_main;
+}
+
+.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+}
+
+
+.break {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination {
+    flex-wrap: wrap;
+  }
+}

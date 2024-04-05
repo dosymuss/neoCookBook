@@ -1,0 +1,83 @@
+@import "../../styles/MainStyles.scss";
+
+.dialog {
+  border-radius: 25px;
+  width: 820px;
+  height: 560px;
+}
+.main {
+  background-color: #ffffff;
+  border-radius: 25px;
+  width: 820px;
+  height: 560px;
+  display: flex;
+  overflow: hidden;
+  position: relative
+}
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include nullStyle();
+  z-index: 3;
+}
+
+.firstBlock {
+  width: 520px;
+  height: 560px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+}
+.secBlock {
+  width: 300px;
+  height: 560px;
+  background: linear-gradient(142deg, #ffb72a 0%, #ff852c 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+  h2 {
+    width: 150px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 123%;
+    text-align: center;
+    color: white;
+  }
+  button {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: $color_o_main;
+    border: none;
+    outline: none;
+  }
+}
+
+.moveLeft {
+  transform: translateX(-520px);
+}
+
+.moveRight {
+  transform: translateX(300px);
+}
